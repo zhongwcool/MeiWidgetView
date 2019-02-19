@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.demo.widget">
 
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
@@ -11,38 +12,72 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".guhong.MainActivity"></activity>
-        <activity android:name=".guhong.BounceBallActivity"></activity>
-        <activity android:name=".guhong.MeiRippleActivity"></activity>
-        <activity android:name=".guhong.MeiLinePathActivity"></activity>
-        <activity android:name=".meis.MeiScrollParallaxActivity"></activity>
+        <activity
+            android:name=".guhong.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".guhong.BounceBallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".guhong.MeiRippleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".guhong.MeiLinePathActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".meis.MeiScrollParallaxActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".meis.MainActivity"
-            android:windowContentTransitions="true"></activity>
-        <activity android:name=".meis.MeiHeartActivity"></activity>
-        <activity android:name=".meis.MeiRadiusActivity"></activity>
+            android:screenOrientation="portrait"
+            android:windowContentTransitions="true" />
+        <activity
+            android:name=".meis.MeiHeartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".meis.MeiRadiusActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".meis.MeiPhotoDragActivity"
-            android:theme="@style/translucent"></activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent" />
         <activity
             android:name=".meis.MeiVideoDragActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/translucent"
-            android:windowContentTransitions="true"></activity>
-        <activity android:name=".meis.MeiVideoDragListActivity"></activity>
-        <activity android:name=".meis.MeiMoBikeActivity"></activity>
-        <activity android:name=".meis.MeiRoseActivity"></activity>
-        <activity android:name=".meis.MeiFireflyActivity"></activity>
-        <activity android:name=".meis.MeiPraiseActivity"></activity>
-        <activity android:name=".meis.MeiEvaporateActivity"></activity>
-        <activity android:name=".meis.MeiScrollViewActivity"></activity>
+            android:windowContentTransitions="true" />
+        <activity
+            android:name=".meis.MeiVideoDragListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".meis.MeiMoBikeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".meis.MeiRoseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".meis.MeiFireflyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".meis.MeiPraiseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".meis.MeiEvaporateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".meis.MeiScrollViewActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
